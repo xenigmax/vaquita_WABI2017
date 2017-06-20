@@ -43,4 +43,4 @@ You can refer my command in `commands.txt`.
 
 Contact
 -----------------
-Jongkyu Kim (hello@jongkyu.kim)
+Jongkyu Kim (vaquita_WABI@jongkyu.kim)
