@@ -1,8 +1,5 @@
 This repositorty contains all the scripts that I used for benchmakring [Vaquita](http://www.worldwildlife.org/species/vaquita).
 The result was presented in [WABI2017](http://www.acm-bcb.org/WABI/2017/index.php) in Boston. 
-Note that I uploaded all the files 'as is'.
-Thus, it may not working properly in specific environment.
-Please feel free to let me know if it's the case.
 
 Prerequeistics
 -----------------
