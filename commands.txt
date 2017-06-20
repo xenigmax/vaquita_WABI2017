@@ -1,0 +1,371 @@
+##################################################
+# 5x
+##################################################
+# SE
+./run.py -f chr22.fa -r chr22_mason_5x_1.fq,chr22_mason_5x_2.fq -m bwa,mem -v v_seqan,-se:1,-pe:1,-re:0.0,-c:4,-v:999,-m:50,-a:50,-ps:500,-pi:7.0,-cs:20,-ce:0.1,-cg:/srv/public/kjk/noname/data/refs/chr22.fa,--no-pe,--no-ce,--no-re,--report-filtered,--no-rank-aggregation  --skip-read-mapping  &
+
+# SE,PE
+./run.py -f chr22.fa -r chr22_mason_5x_1.fq,chr22_mason_5x_2.fq -m bwa,mem -v v_seqan,-se:1,-pe:1,-re:0.0,-c:4,-v:999,-m:50,-a:50,-ps:500,-pi:7.0,-cs:20,-ce:0.1,-cg:/srv/public/kjk/noname/data/refs/chr22.fa,--no-ce,--no-re,--report-filtered,--no-rank-aggregation  --skip-read-mapping  &
+
+# SE,PE,CE
+./run.py -f chr22.fa -r chr22_mason_5x_1.fq,chr22_mason_5x_2.fq -m bwa,mem -v v_seqan,-se:1,-pe:1,-re:0.0,-c:4,-v:999,-m:50,-a:50,-ps:500,-pi:7.0,-cs:20,-ce:0.1,-cg:/srv/public/kjk/noname/data/refs/chr22.fa,--no-re,--report-filtered,--no-rank-aggregation  --skip-read-mapping  &
+
+# SE,PE,CE,RE (combined evidence-v2)
+./run.py -f chr22.fa -r chr22_mason_5x_1.fq,chr22_mason_5x_2.fq -m bwa,mem -v v_seqan,-se:1,-pe:1,-re:0.0,-c:4,-v:2,-m:50,-a:50,-ps:500,-pi:7.0,-cs:20,-ce:0.1,-cg:/srv/public/kjk/noname/data/refs/chr22.fa,--report-filtered,--no-rank-aggregation  --skip-read-mapping  &
+
+# SE,PE,CE,RE (combined evidence-v3)
+./run.py -f chr22.fa -r chr22_mason_5x_1.fq,chr22_mason_5x_2.fq -m bwa,mem -v v_seqan,-se:1,-pe:1,-re:0.0,-c:4,-v:3,-m:50,-a:50,-ps:500,-pi:7.0,-cs:20,-ce:0.1,-cg:/srv/public/kjk/noname/data/refs/chr22.fa,--report-filtered,--no-rank-aggregation  --skip-read-mapping  &
+
+# SE,PE,CE,RE (combined evidence, rank aggregation)
+./run.py -f chr22.fa -r chr22_mason_5x_1.fq,chr22_mason_5x_2.fq -m bwa,mem -v v_seqan,-se:1,-pe:1,-re:0.0,-c:4,-v:3,-m:50,-a:50,-ps:500,-pi:5.0,-cs:20,-ce:0.1,-cg:/srv/public/kjk/noname/data/refs/chr22.fa,--report-filtered  --skip-read-mapping  &
+
+./run.py -f chr22.fa -r chr22_mason_5x_1.fq,chr22_mason_5x_2.fq -m bwa,mem -v v_seqan,-se:1,-pe:1,-re:0.0,-c:4,-v:3,-m:50,-a:50,-ps:500,-pi:5.0,-cs:20,-ce:0.1,-cg:/srv/public/kjk/noname/data/refs/chr22.fa,--report-filtered  --skip-read-mapping  &
+
+./run.py -f chr22.fa -r chr22_mason_5x_1.fq,chr22_mason_5x_2.fq -m bwa,mem -v v_seqan,-se:1,-pe:1,-re:0.0,-c:4,-v:3,-m:50,-a:50,-ps:500,-pi:7.0,-cs:20,-ce:0.1,-cg:/srv/public/kjk/noname/data/refs/chr22.fa,--report-filtered  --skip-read-mapping  &
+
+
+##################################################
+# 10x
+##################################################
+# SE
+./run.py -f chr22.fa -r chr22_mason_10x_1.fq,chr22_mason_10x_2.fq -m bwa,mem -v v_seqan,-se:1,-pe:1,-re:0.0,-c:4,-v:999,-m:50,-a:10,-ps:500,-pi:5.0,-cs:20,-ce:0.1,-cg:/srv/public/kjk/noname/data/refs/chr22.fa,--no-pe,--no-ce,--no-re,--report-filtered,--no-rank-aggregation  --skip-read-mapping  &
+
+# SE,PE
+./run.py -f chr22.fa -r chr22_mason_10x_1.fq,chr22_mason_10x_2.fq -m bwa,mem -v v_seqan,-se:1,-pe:1,-re:0.0,-c:4,-v:999,-m:50,-a:10,-ps:500,-pi:5.0,-cs:20,-ce:0.1,-cg:/srv/public/kjk/noname/data/refs/chr22.fa,--no-ce,--no-re,--report-filtered,--no-rank-aggregation  --skip-read-mapping  &
+
+# SE,PE,CE
+./run.py -f chr22.fa -r chr22_mason_10x_1.fq,chr22_mason_10x_2.fq -m bwa,mem -v v_seqan,-se:1,-pe:1,-re:0.0,-c:4,-v:999,-m:50,-a:10,-ps:500,-pi:5.0,-cs:20,-ce:0.1,-cg:/srv/public/kjk/noname/data/refs/chr22.fa,--no-re,--report-filtered,--no-rank-aggregation  --skip-read-mapping  &
+
+# SE,PE,CE,RE (combined evidence-v2)
+./run.py -f chr22.fa -r chr22_mason_10x_1.fq,chr22_mason_10x_2.fq -m bwa,mem -v v_seqan,-se:1,-pe:1,-re:0.0,-c:4,-v:2,-m:50,-a:10,-ps:500,-pi:5.0,-cs:20,-ce:0.1,-cg:/srv/public/kjk/noname/data/refs/chr22.fa,--report-filtered,--no-rank-aggregation  --skip-read-mapping  &
+
+# SE,PE,CE,RE (combined evidence-v3)
+./run.py -f chr22.fa -r chr22_mason_10x_1.fq,chr22_mason_10x_2.fq -m bwa,mem -v v_seqan,-se:1,-pe:1,-re:0.0,-c:4,-v:3,-m:50,-a:10,-ps:500,-pi:5.0,-cs:20,-ce:0.1,-cg:/srv/public/kjk/noname/data/refs/chr22.fa,--report-filtered,--no-rank-aggregation  --skip-read-mapping  &
+
+# SE,PE,CE,RE (combined evidence, rank aggregation)
+./run.py -f chr22.fa -r chr22_mason_10x_1.fq,chr22_mason_10x_2.fq -m bwa,mem -v v_seqan,-se:1,-pe:1,-re:0.0,-c:4,-v:3,-m:50,-a:10,-ps:500,-pi:5.0,-cs:20,-ce:0.1,-cg:/srv/public/kjk/noname/data/refs/chr22.fa,--report-filtered  --skip-read-mapping  &
+
+##################################################
+# 30x
+##################################################
+# SE
+./run.py -f chr22.fa -r chr22_mason_30x_1.fq,chr22_mason_30x_2.fq -m bwa,mem -v v_seqan,-se:1,-pe:1,-re:0.0,-c:4,-v:999,-m:50,-a:10,-ps:500,-pi:5.0,-cs:20,-ce:0.1,-cg:/srv/public/kjk/noname/data/refs/chr22.fa,--no-pe,--no-ce,--no-re,--report-filtered,--no-rank-aggregation  --skip-read-mapping  &
+
+# SE,PE
+./run.py -f chr22.fa -r chr22_mason_30x_1.fq,chr22_mason_30x_2.fq -m bwa,mem -v v_seqan,-se:1,-pe:1,-re:0.0,-c:4,-v:999,-m:50,-a:10,-ps:500,-pi:5.0,-cs:20,-ce:0.1,-cg:/srv/public/kjk/noname/data/refs/chr22.fa,--no-ce,--no-re,--report-filtered,--no-rank-aggregation  --skip-read-mapping  &
+
+# SE,PE,CE
+./run.py -f chr22.fa -r chr22_mason_30x_1.fq,chr22_mason_30x_2.fq -m bwa,mem -v v_seqan,-se:1,-pe:1,-re:0.0,-c:4,-v:999,-m:50,-a:10,-ps:500,-pi:5.0,-cs:20,-ce:0.1,-cg:/srv/public/kjk/noname/data/refs/chr22.fa,--no-re,--report-filtered,--no-rank-aggregation  --skip-read-mapping  &
+
+# SE,PE,CE,RE (combined evidence-v2)
+./run.py -f chr22.fa -r chr22_mason_30x_1.fq,chr22_mason_30x_2.fq -m bwa,mem -v v_seqan,-se:1,-pe:1,-re:0.0,-c:4,-v:2,-m:50,-a:10,-ps:500,-pi:5.0,-cs:20,-ce:0.1,-cg:/srv/public/kjk/noname/data/refs/chr22.fa,--report-filtered,--no-rank-aggregation  --skip-read-mapping  &
+
+# SE,PE,CE,RE (combined evidence-v3)
+./run.py -f chr22.fa -r chr22_mason_30x_1.fq,chr22_mason_30x_2.fq -m bwa,mem -v v_seqan,-se:1,-pe:1,-re:0.0,-c:4,-v:3,-m:50,-a:10,-ps:500,-pi:5.0,-cs:20,-ce:0.1,-cg:/srv/public/kjk/noname/data/refs/chr22.fa,--report-filtered,--no-rank-aggregation  --skip-read-mapping  &
+
+# SE,PE,CE,RE (combined evidence, rank aggregation)
+./run.py -f chr22.fa -r chr22_mason_30x_1.fq,chr22_mason_30x_2.fq -m bwa,mem -v v_seqan,-se:1,-pe:1,-re:0.0,-c:4,-v:3,-m:50,-a:10,-ps:500,-pi:5.0,-cs:20,-ce:0.1,-cg:/srv/public/kjk/noname/data/refs/chr22.fa,--report-filtered  --skip-read-mapping  &
+
+
+./run.py -f chr22.fa -r chr22_mason_30x_1.fq,chr22_mason_30x_2.fq -m bwa,mem -v v_seqan,-se:1,-pe:1,-re:0.0,-c:4,-v:3,-m:50,-a:10,-ps:500,-pi:7.0,-cs:20,-ce:0.1,-cg:/srv/public/kjk/noname/data/refs/chr22.fa,--report-filtered  --skip-read-mapping  &
+
+./run.py -f chr22.fa -r chr22_mason_5x_1.fq,chr22_mason_5x_2.fq -m bwa,mem -v v_seqan,-se:1,-pe:1,-re:0.0,-c:4,-v:3,-m:50,-a:10,-ps:500,-pi:7.0,-cs:20,-ce:0.1,-cg:/srv/public/kjk/noname/data/refs/chr22.fa,--report-filtered  --skip-read-mapping  &
+
+
+##################################################
+# 50x
+##################################################
+# SE
+./run.py -f chr22.fa -r chr22_mason_50x_1.fq,chr22_mason_50x_2.fq -m bwa,mem -v v_seqan,-se:1,-pe:1,-re:0.0,-c:4,-v:999,-m:50,-a:10,-ps:500,-pi:5.0,-cs:20,-ce:0.1,-cg:/srv/public/kjk/noname/data/refs/chr22.fa,--no-pe,--no-ce,--no-re,--report-filtered,--no-rank-aggregation  --skip-read-mapping  &
+
+# SE,PE
+./run.py -f chr22.fa -r chr22_mason_50x_1.fq,chr22_mason_50x_2.fq -m bwa,mem -v v_seqan,-se:1,-pe:1,-re:0.0,-c:4,-v:999,-m:50,-a:10,-ps:500,-pi:5.0,-cs:20,-ce:0.1,-cg:/srv/public/kjk/noname/data/refs/chr22.fa,--no-ce,--no-re,--report-filtered,--no-rank-aggregation  --skip-read-mapping  &
+
+# SE,PE,CE
+./run.py -f chr22.fa -r chr22_mason_50x_1.fq,chr22_mason_50x_2.fq -m bwa,mem -v v_seqan,-se:1,-pe:1,-re:0.0,-c:4,-v:999,-m:50,-a:10,-ps:500,-pi:5.0,-cs:20,-ce:0.1,-cg:/srv/public/kjk/noname/data/refs/chr22.fa,--no-re,--report-filtered,--no-rank-aggregation  --skip-read-mapping  &
+
+# SE,PE,CE,RE (combined evidence-v2)
+./run.py -f chr22.fa -r chr22_mason_50x_1.fq,chr22_mason_50x_2.fq -m bwa,mem -v v_seqan,-se:1,-pe:1,-re:0.0,-c:4,-v:2,-m:50,-a:10,-ps:500,-pi:5.0,-cs:20,-ce:0.1,-cg:/srv/public/kjk/noname/data/refs/chr22.fa,--report-filtered,--no-rank-aggregation  --skip-read-mapping  &
+
+# SE,PE,CE,RE (combined evidence-v3)
+./run.py -f chr22.fa -r chr22_mason_50x_1.fq,chr22_mason_50x_2.fq -m bwa,mem -v v_seqan,-se:1,-pe:1,-re:0.0,-c:4,-v:3,-m:50,-a:10,-ps:500,-pi:5.0,-cs:20,-ce:0.1,-cg:/srv/public/kjk/noname/data/refs/chr22.fa,--report-filtered,--no-rank-aggregation  --skip-read-mapping  &
+
+# SE,PE,CE,RE (combined evidence, rank aggregation)
+./run.py -f chr22.fa -r chr22_mason_50x_1.fq,chr22_mason_50x_2.fq -m bwa,mem -v v_seqan,-se:1,-pe:1,-re:0.0,-c:4,-v:3,-m:50,-a:10,-ps:500,-pi:5.0,-cs:20,-ce:0.1,-cg:/srv/public/kjk/noname/data/refs/chr22.fa,--report-filtered  --skip-read-mapping  &
+
+##################################################
+# real
+##################################################
+
+./report.py -t mason -f chr22_mason.vcf -g chr22.fa -o 0.8 -m 50 > aa.txt
+vi ./report/t\:mason#f\:chr22_mason.vcf#g\:chr22.fa#o\:0.8#m\:50/report.txt
+
+./report.py -t mason -f chr22_mason.vcf -g chr22.fa -o 0.8 -m 50 -s qc> aa.txt
+vi ./report/t\:mason#f\:chr22_mason.vcf#g\:chr22.fa#o\:0.8#m\:50#s\:qc/report.txt
+
+./report.py -t mason -f chr22_mason.vcf -g chr22.fa -o 0.8 -m 50 -s qc -b ce > aa.txt
+vi ./report/t\:mason#f\:chr22_mason.vcf#g\:chr22.fa#o\:0.8#m\:50#s\:qc#b\:ce/report.txt
+
+
+./report.py -t giab -f GIAB_NA12878.bed -g hg19.fa -o 0.8 -m 50 -s qc > aa.txt &
+vi ./report/t\:giab#f\:GIAB_NA12878.bed#g\:hg19.fa#o\:0.8#m\:50#s\:qc/report.txt
+
+./report.py -t dgv -f DGV_NA12878.gff -g hg19.fa -o 0.8 -m 50 > bb.txt &
+vi ./report/t\:dgv#f\:DGV_NA12878.gff#g\:hg19.fa#o\:0.8#m\:50/report.txt
+
+
+./run.py -f hg19.fa -r ERR194147_1.fastq,ERR194147_2.fastq -m bwa,mem -v v_seqan,-se:1,-pe:1,-re:0.0,-rw:20,-c:4,-v:3,-m:50,-a:50,-ps:500,-pi:8.0,-pd:1.0,-cs:20,-ce:0.1,-cg:/srv/public/kjk/noname/data/refs/hg19.fa,--report-filtered  --skip-read-mapping  &
+./run.py -f hg19.fa -r ERR194147_1.fastq,ERR194147_2.fastq -m bwa,mem -v v_seqan,-se:1,-pe:1,-re:0.0,-rw:20,-c:4,-v:3,-m:50,-a:50,-ps:500,-pi:9.0,-pd:1.0,-cs:20,-ce:0.1,-cg:/srv/public/kjk/noname/data/refs/hg19.fa,--report-filtered  --skip-read-mapping  &
+./run.py -f hg19.fa -r ERR194160_1.fastq,ERR194160_2.fastq -m bwa,mem -v v_seqan,-se:1,-pe:1,-re:0.0,-rw:20,-c:4,-v:3,-m:50,-a:50,-ps:500,-pi:9.0,-pd:1.0,-cs:20,-ce:0.1,-cg:/srv/public/kjk/noname/data/refs/hg19.fa,--report-filtered  --skip-read-mapping  &
+./run.py -f hg19.fa -r ERR194161_1.fastq,ERR194161_2.fastq -m bwa,mem -v v_seqan,-se:1,-pe:1,-re:0.0,-rw:20,-c:4,-v:3,-m:50,-a:50,-ps:500,-pi:9.0,-pd:1.0,-cs:20,-ce:0.1,-cg:/srv/public/kjk/noname/data/refs/hg19.fa,--report-filtered  --skip-read-mapping  &
+
+
+./run.py -f chr22.fa -r chr22_mason_5x_1.fq,chr22_mason_5x_2.fq -m bwa,mem -v v_seqan,-se:1,-pe:1,-re:0.0,-rw:20,-c:4,-v:3,-m:50,-a:50,-ps:500,-pi:9.0,-pd:1.0,-cs:20,-ce:0.1,-cg:/srv/public/kjk/noname/data/refs/chr22.fa,--report-filtered --skip-read-mapping &
+./run.py -f chr22.fa -r chr22_mason_30x_1.fq,chr22_mason_30x_2.fq -m bwa,mem -v v_seqan,-se:1,-pe:1,-re:0.0,-rw:20,-c:4,-v:3,-m:50,-a:50,-ps:500,-pi:9.0,-pd:1.0,-cs:20,-ce:0.1,-cg:/srv/public/kjk/noname/data/refs/chr22.fa,--report-filtered --skip-read-mapping &
+
+./run.py -f chr22.fa -r chr22_mason_50x_1.fq,chr22_mason_50x_2.fq -m bwa,mem -v v_seqan,-se:1,-pe:1,-re:0.0,-rw:20,-c:4,-v:3,-m:50,-a:50,-ps:500,-pi:9.0,-pd:1.0,-cs:20,-ce:0.1,-cg:/srv/public/kjk/noname/data/refs/chr22.fa,--report-filtered --skip-read-mapping &
+
+##################################################
+# KL
+##################################################
+1) COMMENT
+ReadDepth::calculateReadDepthStat
+
+2) RUN
+/srv/public/kjk/vaquita-build-develop/bin/vaquita -se 1 -pe 1 -re 0.0 -rw 20 -rs 10000 -c 0 -v 999 -m 50 -a 50 -ps 500 -pi 9.0 -pd 1.0 -cs 20 -ce 0.1 -cg /srv/public/kjk/noname/data/refs/chr22.fa --report-filtered ./result//chr22.fa/chr22_mason_30x_1.fq#chr22_mason_30x_2.fq/bwa#mem/out.sorted.bam > ./WABI/re_stat.txt
+python ks.py ./WABI/re_stat.txt  > ./WABI/re_ks.txt
+
+##################################################
+# CE
+##################################################
+1) bash clean.sh
+2) config.py
+CONFIG["read-white-list"] = ["5x_1.", "10x_1.", "30x_1.", "50x_1."]
+3) RUN
+./run.py -f chr22.fa -r chr22_mason_5x_1.fq,chr22_mason_5x_2.fq -m bwa,mem -v v_seqan,-se:1,-pe:1,-re:1.0,-rw:20,-c:0,-v:999,-m:50,-a:50,-ps:500,-pi:9.0,-pd:999.0,-cs:20,-ce:0.1,-cg:/srv/public/kjk/noname/data/refs/chr22.fa,--report-filtered,--no-rank-aggregation --skip-read-mapping &
+./run.py -f chr22.fa -r chr22_mason_10x_1.fq,chr22_mason_10x_2.fq -m bwa,mem -v v_seqan,-se:1,-pe:1,-re:1.0,-rw:20,-c:0,-v:999,-m:50,-a:50,-ps:500,-pi:9.0,-pd:999.0,-cs:20,-ce:0.1,-cg:/srv/public/kjk/noname/data/refs/chr22.fa,--report-filtered,--no-rank-aggregation --skip-read-mapping &
+./run.py -f chr22.fa -r chr22_mason_30x_1.fq,chr22_mason_30x_2.fq -m bwa,mem -v v_seqan,-se:1,-pe:1,-re:1.0,-rw:20,-c:0,-v:999,-m:50,-a:50,-ps:500,-pi:9.0,-pd:999.0,-cs:20,-ce:0.1,-cg:/srv/public/kjk/noname/data/refs/chr22.fa,--report-filtered,--no-rank-aggregation --skip-read-mapping &
+./run.py -f chr22.fa -r chr22_mason_50x_1.fq,chr22_mason_50x_2.fq -m bwa,mem -v v_seqan,-se:1,-pe:1,-re:1.0,-rw:20,-c:0,-v:999,-m:50,-a:50,-ps:500,-pi:9.0,-pd:999.0,-cs:20,-ce:0.1,-cg:/srv/public/kjk/noname/data/refs/chr22.fa,--report-filtered,--no-rank-aggregation --skip-read-mapping &
+
+4) REPORT
+./report.py -t mason -f chr22_mason.vcf -g chr22.fa -o 0.8 -m 50 -s qc -b ce > aa.txt
+vi ./report/t\:mason#f\:chr22_mason.vcf#g\:chr22.fa#o\:0.8#m\:50#s\:qc#b\:ce/report.txt
+cp ./report/t\:mason#f\:chr22_mason.vcf#g\:chr22.fa#o\:0.8#m\:50#s\:qc#b\:ce/report.txt ./WABI/ce.txt
+
+##################################################
+# VOTING (nou used)
+##################################################
+1) bash clean.sh
+2) RUN
+./run.py -f chr22.fa -r chr22_mason_5x_1.fq,chr22_mason_5x_2.fq -m bwa,mem -v v_seqan,-se:1,-pe:1,-re:0.0,-rw:20,-c:0,-v:0,-m:50,-a:50,-ps:500,-pi:9.0,-pd:1.0,-cs:20,-ce:0.1,-cg:/srv/public/kjk/noname/data/refs/chr22.fa,--report-filtered,--no-rank-aggregation --skip-read-mapping &
+./run.py -f chr22.fa -r chr22_mason_10x_1.fq,chr22_mason_10x_2.fq -m bwa,mem -v v_seqan,-se:1,-pe:1,-re:0.0,-rw:20,-c:0,-v:0,-m:50,-a:50,-ps:500,-pi:9.0,-pd:1.0,-cs:20,-ce:0.1,-cg:/srv/public/kjk/noname/data/refs/chr22.fa,--report-filtered,--no-rank-aggregation --skip-read-mapping &
+./run.py -f chr22.fa -r chr22_mason_30x_1.fq,chr22_mason_30x_2.fq -m bwa,mem -v v_seqan,-se:1,-pe:1,-re:0.0,-rw:20,-c:0,-v:0,-m:50,-a:50,-ps:500,-pi:9.0,-pd:1.0,-cs:20,-ce:0.1,-cg:/srv/public/kjk/noname/data/refs/chr22.fa,--report-filtered,--no-rank-aggregation --skip-read-mapping &
+./run.py -f chr22.fa -r chr22_mason_50x_1.fq,chr22_mason_50x_2.fq -m bwa,mem -v v_seqan,-se:1,-pe:1,-re:0.0,-rw:20,-c:0,-v:0,-m:50,-a:50,-ps:500,-pi:9.0,-pd:1.0,-cs:20,-ce:0.1,-cg:/srv/public/kjk/noname/data/refs/chr22.fa,--report-filtered,--no-rank-aggregation --skip-read-mapping &
+
+./report.py -t mason -f chr22_mason.vcf -g chr22.fa -o 0.8 -m 50 > aa.txt
+./report.py -t mason -f chr22_mason.vcf -g chr22.fa -o 0.8 -m 50 -b vt > aa.txt
+cp ./report/t\:mason#f\:chr22_mason.vcf#g\:chr22.fa#o\:0.8#m\:50/report.txt ./WABI/voting_es.txt
+cp ./report/t\:mason#f\:chr22_mason.vcf#g\:chr22.fa#o\:0.8#m\:50#b\:vt/report.txt ./WABI/voting_vt.txt
+
+##################################################
+# EVIDENCE COMBINATION
+##################################################
+1) bash clean.sh
+2) RUN
+./run.py -f chr22.fa -r chr22_mason_5x_1.fq,chr22_mason_5x_2.fq -m bwa,mem -v v_seqan,-se:1,-pe:1,-re:1.0,-rw:20,-c:2,-v:999,-m:50,-a:50,-ps:500,-pi:9.0,-pd:1.0,-cs:20,-ce:0.1,-cg:/srv/public/kjk/noname/data/refs/chr22.fa,--report-filtered,--no-pe,--no-ce,--no-re,--no-rank-aggregation --skip-read-mapping &
+./run.py -f chr22.fa -r chr22_mason_5x_1.fq,chr22_mason_5x_2.fq -m bwa,mem -v v_seqan,-se:1,-pe:1,-re:1.0,-rw:20,-c:4,-v:999,-m:50,-a:50,-ps:500,-pi:9.0,-pd:1.0,-cs:20,-ce:0.1,-cg:/srv/public/kjk/noname/data/refs/chr22.fa,--report-filtered,--no-ce,--no-re,--no-rank-aggregation --skip-read-mapping &
+./run.py -f chr22.fa -r chr22_mason_5x_1.fq,chr22_mason_5x_2.fq -m bwa,mem -v v_seqan,-se:1,-pe:1,-re:1.0,-rw:20,-c:4,-v:999,-m:50,-a:50,-ps:500,-pi:9.0,-pd:1.0,-cs:20,-ce:0.1,-cg:/srv/public/kjk/noname/data/refs/chr22.fa,--report-filtered,--no-re,--no-rank-aggregation --skip-read-mapping &
+./run.py -f chr22.fa -r chr22_mason_5x_1.fq,chr22_mason_5x_2.fq -m bwa,mem -v v_seqan,-se:1,-pe:1,-re:1.0,-rw:20,-c:4,-v:3,-m:50,-a:50,-ps:500,-pi:9.0,-pd:1.0,-cs:20,-ce:0.1,-cg:/srv/public/kjk/noname/data/refs/chr22.fa,--report-filtered,--no-rank-aggregation --skip-read-mapping &
+
+./run.py -f chr22.fa -r chr22_mason_10x_1.fq,chr22_mason_10x_2.fq -m bwa,mem -v v_seqan,-se:1,-pe:1,-re:1.0,-rw:20,-c:2,-v:999,-m:50,-a:50,-ps:500,-pi:9.0,-pd:1.0,-cs:20,-ce:0.1,-cg:/srv/public/kjk/noname/data/refs/chr22.fa,--report-filtered,--no-pe,--no-ce,--no-re,--no-rank-aggregation --skip-read-mapping &
+./run.py -f chr22.fa -r chr22_mason_10x_1.fq,chr22_mason_10x_2.fq -m bwa,mem -v v_seqan,-se:1,-pe:1,-re:1.0,-rw:20,-c:4,-v:999,-m:50,-a:50,-ps:500,-pi:9.0,-pd:1.0,-cs:20,-ce:0.1,-cg:/srv/public/kjk/noname/data/refs/chr22.fa,--report-filtered,--no-ce,--no-re,--no-rank-aggregation --skip-read-mapping &
+./run.py -f chr22.fa -r chr22_mason_10x_1.fq,chr22_mason_10x_2.fq -m bwa,mem -v v_seqan,-se:1,-pe:1,-re:1.0,-rw:20,-c:4,-v:999,-m:50,-a:50,-ps:500,-pi:9.0,-pd:1.0,-cs:20,-ce:0.1,-cg:/srv/public/kjk/noname/data/refs/chr22.fa,--report-filtered,--no-re,--no-rank-aggregation --skip-read-mapping &
+./run.py -f chr22.fa -r chr22_mason_10x_1.fq,chr22_mason_10x_2.fq -m bwa,mem -v v_seqan,-se:1,-pe:1,-re:1.0,-rw:20,-c:4,-v:3,-m:50,-a:50,-ps:500,-pi:9.0,-pd:1.0,-cs:20,-ce:0.1,-cg:/srv/public/kjk/noname/data/refs/chr22.fa,--report-filtered,--no-rank-aggregation --skip-read-mapping &
+
+./run.py -f chr22.fa -r chr22_mason_30x_1.fq,chr22_mason_30x_2.fq -m bwa,mem -v v_seqan,-se:1,-pe:1,-re:1.0,-rw:20,-c:2,-v:999,-m:50,-a:50,-ps:500,-pi:9.0,-pd:1.0,-cs:20,-ce:0.1,-cg:/srv/public/kjk/noname/data/refs/chr22.fa,--report-filtered,--no-pe,--no-ce,--no-re,--no-rank-aggregation --skip-read-mapping &
+./run.py -f chr22.fa -r chr22_mason_30x_1.fq,chr22_mason_30x_2.fq -m bwa,mem -v v_seqan,-se:1,-pe:1,-re:1.0,-rw:20,-c:4,-v:999,-m:50,-a:50,-ps:500,-pi:9.0,-pd:1.0,-cs:20,-ce:0.1,-cg:/srv/public/kjk/noname/data/refs/chr22.fa,--report-filtered,--no-ce,--no-re,--no-rank-aggregation --skip-read-mapping &
+./run.py -f chr22.fa -r chr22_mason_30x_1.fq,chr22_mason_30x_2.fq -m bwa,mem -v v_seqan,-se:1,-pe:1,-re:1.0,-rw:20,-c:4,-v:999,-m:50,-a:50,-ps:500,-pi:9.0,-pd:1.0,-cs:20,-ce:0.1,-cg:/srv/public/kjk/noname/data/refs/chr22.fa,--report-filtered,--no-re,--no-rank-aggregation --skip-read-mapping &
+./run.py -f chr22.fa -r chr22_mason_30x_1.fq,chr22_mason_30x_2.fq -m bwa,mem -v v_seqan,-se:1,-pe:1,-re:1.0,-rw:20,-c:4,-v:3,-m:50,-a:50,-ps:500,-pi:9.0,-pd:1.0,-cs:20,-ce:0.1,-cg:/srv/public/kjk/noname/data/refs/chr22.fa,--report-filtered,--no-rank-aggregation --skip-read-mapping &
+
+./run.py -f chr22.fa -r chr22_mason_50x_1.fq,chr22_mason_50x_2.fq -m bwa,mem -v v_seqan,-se:1,-pe:1,-re:1.0,-rw:20,-c:2,-v:999,-m:50,-a:50,-ps:500,-pi:9.0,-pd:1.0,-cs:20,-ce:0.1,-cg:/srv/public/kjk/noname/data/refs/chr22.fa,--report-filtered,--no-pe,--no-ce,--no-re,--no-rank-aggregation --skip-read-mapping &
+./run.py -f chr22.fa -r chr22_mason_50x_1.fq,chr22_mason_50x_2.fq -m bwa,mem -v v_seqan,-se:1,-pe:1,-re:1.0,-rw:20,-c:4,-v:999,-m:50,-a:50,-ps:500,-pi:9.0,-pd:1.0,-cs:20,-ce:0.1,-cg:/srv/public/kjk/noname/data/refs/chr22.fa,--report-filtered,--no-ce,--no-re,--no-rank-aggregation --skip-read-mapping &
+./run.py -f chr22.fa -r chr22_mason_50x_1.fq,chr22_mason_50x_2.fq -m bwa,mem -v v_seqan,-se:1,-pe:1,-re:1.0,-rw:20,-c:4,-v:999,-m:50,-a:50,-ps:500,-pi:9.0,-pd:1.0,-cs:20,-ce:0.1,-cg:/srv/public/kjk/noname/data/refs/chr22.fa,--report-filtered,--no-re,--no-rank-aggregation --skip-read-mapping &
+./run.py -f chr22.fa -r chr22_mason_50x_1.fq,chr22_mason_50x_2.fq -m bwa,mem -v v_seqan,-se:1,-pe:1,-re:1.0,-rw:20,-c:4,-v:3,-m:50,-a:50,-ps:500,-pi:9.0,-pd:1.0,-cs:20,-ce:0.1,-cg:/srv/public/kjk/noname/data/refs/chr22.fa,--report-filtered,--no-rank-aggregation --skip-read-mapping &
+
+3) COPY
+./report.py -t mason -f chr22_mason.vcf -g chr22.fa -o 0.8 -m 50 > aa.txt
+vi ./report/t\:mason#f\:chr22_mason.vcf#g\:chr22.fa#o\:0.8#m\:50/report.txt
+cp ./report/t\:mason#f\:chr22_mason.vcf#g\:chr22.fa#o\:0.8#m\:50/report.txt ./WABI/comb.txt
+
+##################################################
+# RANK AGGREGATION
+##################################################
+1) bash clean.sh
+2) RUN
+./run.py -f chr22.fa -r chr22_mason_5x_1.fq,chr22_mason_5x_2.fq -m bwa,mem -v v_seqan,-se:1,-pe:1,-re:1.0,-rw:20,-c:4,-v:3,-m:50,-a:50,-ps:500,-pi:9.0,-pd:1.0,-cs:20,-ce:0.1,-cg:/srv/public/kjk/noname/data/refs/chr22.fa,--report-filtered,--no-rank-aggregation --skip-read-mapping &
+./run.py -f chr22.fa -r chr22_mason_5x_1.fq,chr22_mason_5x_2.fq -m bwa,mem -v v_seqan,-se:1,-pe:1,-re:1.0,-rw:20,-c:4,-v:3,-m:50,-a:50,-ps:500,-pi:9.0,-pd:1.0,-cs:20,-ce:0.1,-cg:/srv/public/kjk/noname/data/refs/chr22.fa,--report-filtered --skip-read-mapping &
+
+./run.py -f chr22.fa -r chr22_mason_10x_1.fq,chr22_mason_10x_2.fq -m bwa,mem -v v_seqan,-se:1,-pe:1,-re:1.0,-rw:20,-c:4,-v:3,-m:50,-a:50,-ps:500,-pi:9.0,-pd:1.0,-cs:20,-ce:0.1,-cg:/srv/public/kjk/noname/data/refs/chr22.fa,--report-filtered,--no-rank-aggregation --skip-read-mapping &
+./run.py -f chr22.fa -r chr22_mason_10x_1.fq,chr22_mason_10x_2.fq -m bwa,mem -v v_seqan,-se:1,-pe:1,-re:1.0,-rw:20,-c:4,-v:3,-m:50,-a:50,-ps:500,-pi:9.0,-pd:1.0,-cs:20,-ce:0.1,-cg:/srv/public/kjk/noname/data/refs/chr22.fa,--report-filtered --skip-read-mapping &
+
+./run.py -f chr22.fa -r chr22_mason_30x_1.fq,chr22_mason_30x_2.fq -m bwa,mem -v v_seqan,-se:1,-pe:1,-re:1.0,-rw:20,-c:4,-v:3,-m:50,-a:50,-ps:500,-pi:9.0,-pd:1.0,-cs:20,-ce:0.1,-cg:/srv/public/kjk/noname/data/refs/chr22.fa,--report-filtered,--no-rank-aggregation --skip-read-mapping &
+./run.py -f chr22.fa -r chr22_mason_30x_1.fq,chr22_mason_30x_2.fq -m bwa,mem -v v_seqan,-se:1,-pe:1,-re:1.0,-rw:20,-c:4,-v:3,-m:50,-a:50,-ps:500,-pi:9.0,-pd:1.0,-cs:20,-ce:0.1,-cg:/srv/public/kjk/noname/data/refs/chr22.fa,--report-filtered --skip-read-mapping &
+
+./run.py -f chr22.fa -r chr22_mason_50x_1.fq,chr22_mason_50x_2.fq -m bwa,mem -v v_seqan,-se:1,-pe:1,-re:1.0,-rw:20,-c:4,-v:3,-m:50,-a:50,-ps:500,-pi:9.0,-pd:1.0,-cs:20,-ce:0.1,-cg:/srv/public/kjk/noname/data/refs/chr22.fa,--report-filtered,--no-rank-aggregation --skip-read-mapping &
+./run.py -f chr22.fa -r chr22_mason_50x_1.fq,chr22_mason_50x_2.fq -m bwa,mem -v v_seqan,-se:1,-pe:1,-re:1.0,-rw:20,-c:4,-v:3,-m:50,-a:50,-ps:500,-pi:9.0,-pd:1.0,-cs:20,-ce:0.1,-cg:/srv/public/kjk/noname/data/refs/chr22.fa,--report-filtered --skip-read-mapping &
+
+2) REPORT
+./report.py -t mason -f chr22_mason.vcf -g chr22.fa -o 0.8 -m 50 -s qc> aa.txt
+vi ./report/t\:mason#f\:chr22_mason.vcf#g\:chr22.fa#o\:0.8#m\:50#s\:qc/report.txt
+cp ./report/t\:mason#f\:chr22_mason.vcf#g\:chr22.fa#o\:0.8#m\:50#s\:qc/report.txt ./WABI/rank_agg.txt
+
+
+##################################################
+# Simulation (depth)
+##################################################
+1) bash clean.sh
+2) RUN
+./run.py -f chr22.fa -r chr22_mason_5x_1.fq,chr22_mason_5x_2.fq -m bwa,mem -v v_seqan,-se:1,-pe:1,-re:1.0,-rw:20,-c:4,-v:3,-m:50,-a:50,-ps:500,-pi:9.0,-pd:1.0,-cs:20,-ce:0.1,-cg:/srv/public/kjk/noname/data/refs/chr22.fa,--report-filtered --skip-read-mapping &
+./run.py -f chr22.fa -r chr22_mason_10x_1.fq,chr22_mason_10x_2.fq -m bwa,mem -v v_seqan,-se:1,-pe:1,-re:1.0,-rw:20,-c:4,-v:3,-m:50,-a:50,-ps:500,-pi:9.0,-pd:1.0,-cs:20,-ce:0.1,-cg:/srv/public/kjk/noname/data/refs/chr22.fa,--report-filtered --skip-read-mapping &
+./run.py -f chr22.fa -r chr22_mason_30x_1.fq,chr22_mason_30x_2.fq -m bwa,mem -v v_seqan,-se:1,-pe:1,-re:1.0,-rw:20,-c:4,-v:3,-m:50,-a:50,-ps:500,-pi:9.0,-pd:1.0,-cs:20,-ce:0.1,-cg:/srv/public/kjk/noname/data/refs/chr22.fa,--report-filtered --skip-read-mapping &
+./run.py -f chr22.fa -r chr22_mason_50x_1.fq,chr22_mason_50x_2.fq -m bwa,mem -v v_seqan,-se:1,-pe:1,-re:1.0,-rw:20,-c:4,-v:3,-m:50,-a:50,-ps:500,-pi:9.0,-pd:1.0,-cs:20,-ce:0.1,-cg:/srv/public/kjk/noname/data/refs/chr22.fa,--report-filtered --skip-read-mapping &
+3) config.py
+CONFIG["read-white-list"] = ["5x_1.", "10x_1.", "30x_1.", "50x_1."]
+4) REPORT
+./report.py -t mason -f chr22_mason.vcf -g chr22.fa -o 0.8 -m 50 -s qc> aa.txt &
+./report.py -t mason -f chr22_mason.vcf -g chr22.fa -o 0.8 -m 50 > aa.txt &
+cp ./report/t\:mason#f\:chr22_mason.vcf#g\:chr22.fa#o\:0.8#m\:50#s\:qc/report.txt ./WABI/simu_depth.txt
+cp ./report/t\:mason#f\:chr22_mason.vcf#g\:chr22.fa#o\:0.8#m\:50/report.txt ./WABI/simu_depth_score.txt
+
+##################################################
+# Simulation (read length)
+##################################################
+1) bash clean.sh
+2) RUN
+./run.py -f chr22.fa -r chr22_mason_30x_1.fq,chr22_mason_30x_2.fq -m bwa,mem -v v_seqan,-se:1,-pe:1,-re:1.0,-rw:20,-c:4,-v:3,-m:50,-a:50,-ps:500,-pi:9.0,-pd:1.0,-cs:20,-ce:0.1,-cg:/srv/public/kjk/noname/data/refs/chr22.fa,--report-filtered --skip-read-mapping &
+./run.py -f chr22.fa -r chr22_mason_30x_50r1.fq,chr22_mason_30x_50r2.fq -m bwa,mem -v v_seqan,-se:1,-pe:1,-re:1.0,-rw:20,-c:4,-v:3,-m:50,-a:50,-ps:500,-pi:9.0,-pd:1.0,-cs:20,-ce:0.1,-cg:/srv/public/kjk/noname/data/refs/chr22.fa,--report-filtered --skip-read-mapping &
+./run.py -f chr22.fa -r chr22_mason_30x_75r1.fq,chr22_mason_30x_75r2.fq -m bwa,mem -v v_seqan,-se:1,-pe:1,-re:1.0,-rw:20,-c:4,-v:3,-m:50,-a:50,-ps:500,-pi:9.0,-pd:1.0,-cs:20,-ce:0.1,-cg:/srv/public/kjk/noname/data/refs/chr22.fa,--report-filtered --skip-read-mapping &
+./run.py -f chr22.fa -r chr22_mason_30x_150r1.fq,chr22_mason_30x_150r2.fq -m bwa,mem -v v_seqan,-se:1,-pe:1,-re:1.0,-rw:20,-c:4,-v:3,-m:50,-a:50,-ps:500,-pi:9.0,-pd:1.0,-cs:20,-ce:0.1,-cg:/srv/public/kjk/noname/data/refs/chr22.fa,--report-filtered --skip-read-mapping &
+
+3) config.py
+CONFIG["read-white-list"] = ["r1.", "30x_1."]
+
+4) REPORT
+./report.py -t mason -f chr22_mason.vcf -g chr22.fa -o 0.8 -m 50 -s qc> aa.txt &
+./report.py -t mason -f chr22_mason.vcf -g chr22.fa -o 0.8 -m 50 > aa.txt &
+cp ./report/t\:mason#f\:chr22_mason.vcf#g\:chr22.fa#o\:0.8#m\:50#s\:qc/report.txt ./WABI/simu_read_length.txt
+cp ./report/t\:mason#f\:chr22_mason.vcf#g\:chr22.fa#o\:0.8#m\:50/report.txt ./WABI/simu_read_length_score.txt
+
+##################################################
+# Simulation (insert size)
+##################################################
+1) bash clean.sh
+2) RUN
+./run.py -f chr22.fa -r chr22_mason_30x_1.fq,chr22_mason_30x_2.fq -m bwa,mem -v v_seqan,-se:1,-pe:1,-re:1.0,-rw:20,-c:4,-v:3,-m:50,-a:50,-ps:500,-pi:9.0,-pd:1.0,-cs:20,-ce:0.1,-cg:/srv/public/kjk/noname/data/refs/chr22.fa,--report-filtered --skip-read-mapping &
+./run.py -f chr22.fa -r chr22_mason_30x_200-20i1.fq,chr22_mason_30x_200-20i2.fq -m bwa,mem -v v_seqan,-se:1,-pe:1,-re:1.0,-rw:20,-c:4,-v:3,-m:50,-a:50,-ps:500,-pi:9.0,-pd:1.0,-cs:20,-ce:0.1,-cg:/srv/public/kjk/noname/data/refs/chr22.fa,--report-filtered --skip-read-mapping &
+./run.py -f chr22.fa -r chr22_mason_30x_600-60i1.fq,chr22_mason_30x_600-60i2.fq -m bwa,mem -v v_seqan,-se:1,-pe:1,-re:1.0,-rw:20,-c:4,-v:3,-m:50,-a:50,-ps:500,-pi:9.0,-pd:1.0,-cs:20,-ce:0.1,-cg:/srv/public/kjk/noname/data/refs/chr22.fa,--report-filtered --skip-read-mapping &
+./run.py -f chr22.fa -r chr22_mason_30x_1000-100i1.fq,chr22_mason_30x_1000-100i2.fq -m bwa,mem -v v_seqan,-se:1,-pe:1,-re:1.0,-rw:20,-c:4,-v:3,-m:50,-a:50,-ps:500,-pi:9.0,-pd:1.0,-cs:20,-ce:0.1,-cg:/srv/public/kjk/noname/data/refs/chr22.fa,--report-filtered --skip-read-mapping &
+
+3) config.py
+CONFIG["read-white-list"] = ["i1.fq", "30x_1."]
+
+4) REPORT
+./report.py -t mason -f chr22_mason.vcf -g chr22.fa -o 0.8 -m 50 -s qc> aa.txt &
+./report.py -t mason -f chr22_mason.vcf -g chr22.fa -o 0.8 -m 50 > ab.txt &
+cp ./report/t\:mason#f\:chr22_mason.vcf#g\:chr22.fa#o\:0.8#m\:50#s\:qc/report.txt ./WABI/simu_insert.txt
+cp ./report/t\:mason#f\:chr22_mason.vcf#g\:chr22.fa#o\:0.8#m\:50/report.txt ./WABI/simu_insert_score.txt
+
+
+
+##################################################
+# REAL 
+##################################################
+
+./run.py -f hg19.fa -r ERR194147_1.fastq,ERR194147_2.fastq -m bwa,mem -v v_seqan,-se:1,-pe:1,-re:1.0,-rw:20,-c:4,-v:3,-m:50,-a:50,-ps:500,-pi:9.0,-pd:1.0,-cs:20,-ce:0.1,-cg:/srv/public/kjk/noname/data/refs/hg19.fa,--report-filtered  --skip-read-mapping  &
+./run.py -f hg19.fa -r ERR194160_1.fastq,ERR194160_2.fastq -m bwa,mem -v v_seqan,-se:1,-pe:1,-re:1.0,-rw:20,-c:4,-v:3,-m:50,-a:50,-ps:500,-pi:9.0,-pd:1.0,-cs:20,-ce:0.1,-cg:/srv/public/kjk/noname/data/refs/hg19.fa,--report-filtered  --skip-read-mapping  &
+./run.py -f hg19.fa -r ERR194161_1.fastq,ERR194161_2.fastq -m bwa,mem -v v_seqan,-se:1,-pe:1,-re:1.0,-rw:20,-c:4,-v:3,-m:50,-a:50,-ps:500,-pi:9.0,-pd:1.0,-cs:20,-ce:0.1,-cg:/srv/public/kjk/noname/data/refs/hg19.fa,--report-filtered  --skip-read-mapping  &
+
+
+##################################################
+# GIAB
+##################################################
+1. config.py
+CONFIG["read-white-list"] = ["ERR194147"]
+
+2. run
+./report.py -t giab -f GIAB_NA12878.bed -g hg19.fa -o 0.8 -m 50 -s qc -u 4 > aa.txt &
+vi ./report/t\:giab#f\:GIAB_NA12878.bed#g\:hg19.fa#o\:0.8#m\:50#s\:qc#u\:4/report.txt
+cp ./report/t\:giab#f\:GIAB_NA12878.bed#g\:hg19.fa#o\:0.8#m\:50#s\:qc#u\:4/report.txt ./WABI/giab.txt
+
+
+##################################################
+# Comparison (between tools)
+##################################################
+1. config.py
+CONFIG["read-white-list"] = ["ERR194147"]
+
+2. run
+./report.py -t use_overlap -g hg19.fa -o 0.8 -m 50 -u 4 > aa.txt
+vi ./report//t:use_overlap#g:hg19.fa#o:0.8#m:50#u:4/report.txt
+cp ./report//t:use_overlap#g:hg19.fa#o:0.8#m:50#u:4/report.txt ./WABI/comp_NA12878_tools.txt
+
+
+##################################################
+# Comparison
+##################################################
+1. config.py
+CONFIG["read-white-list"] = ["ERR1941"]
+
+2. run
+./report.py -t use_overlap -g hg19.fa -o 0.8 -m 50 -u 4 &
+./report.py -t use_overlap -g hg19.fa -o 0.8 -m 50 -u q1 &
+./report.py -t use_overlap -g hg19.fa -o 0.8 -m 50 -u q2 &
+./report.py -t use_overlap -g hg19.fa -o 0.8 -m 50 -u q3 &
+./report.py -t use_overlap -g hg19.fa -o 0.8 -m 50 -u q4 &
+cp ./report//t:use_overlap#g:hg19.fa#o:0.8#m:50#u:4/report.txt ./WABI/comp_tri_delly.txt
+cp ./report//t:use_overlap#g:hg19.fa#o:0.8#m:50#u:q1/report.txt ./WABI/comp_tri_delly_q1.txt
+cp ./report//t:use_overlap#g:hg19.fa#o:0.8#m:50#u:q2/report.txt ./WABI/comp_tri_delly_q2.txt
+cp ./report//t:use_overlap#g:hg19.fa#o:0.8#m:50#u:q3/report.txt ./WABI/comp_tri_delly_q3.txt
+cp ./report//t:use_overlap#g:hg19.fa#o:0.8#m:50#u:q4/report.txt ./WABI/comp_tri_delly_q4.txt
+
+# already filtered
+./report.py -t use_overlap -g hg19.fa -o 0.8 -m 50 -u 0 &
+./report.py -t use_overlap -g hg19.fa -o 0.8 -m 50 -u q1 &
+./report.py -t use_overlap -g hg19.fa -o 0.8 -m 50 -u q2 &
+./report.py -t use_overlap -g hg19.fa -o 0.8 -m 50 -u q3 &
+./report.py -t use_overlap -g hg19.fa -o 0.8 -m 50 -u q4 &
+cp ./report//t:use_overlap#g:hg19.fa#o:0.8#m:50#u:0/report.txt ./WABI/comp_tri_lumpy.txt
+cp ./report//t:use_overlap#g:hg19.fa#o:0.8#m:50#u:q1/report.txt ./WABI/comp_tri_lumpy_q1.txt
+cp ./report//t:use_overlap#g:hg19.fa#o:0.8#m:50#u:q2/report.txt ./WABI/comp_tri_lumpy_q2.txt
+cp ./report//t:use_overlap#g:hg19.fa#o:0.8#m:50#u:q3/report.txt ./WABI/comp_tri_lumpy_q3.txt
+cp ./report//t:use_overlap#g:hg19.fa#o:0.8#m:50#u:q4/report.txt ./WABI/comp_tri_lumpy_q4.txt
+
+# already filtered
+./report.py -t use_overlap -g hg19.fa -o 0.8 -m 50 -u 0 &
+./report.py -t use_overlap -g hg19.fa -o 0.8 -m 50 -u q1 &
+./report.py -t use_overlap -g hg19.fa -o 0.8 -m 50 -u q2 &
+./report.py -t use_overlap -g hg19.fa -o 0.8 -m 50 -u q3 &
+./report.py -t use_overlap -g hg19.fa -o 0.8 -m 50 -u q4 &
+cp ./report//t:use_overlap#g:hg19.fa#o:0.8#m:50#u:0/report.txt ./WABI/comp_tri_vaquita.txt
+cp ./report//t:use_overlap#g:hg19.fa#o:0.8#m:50#u:q1/report.txt ./WABI/comp_tri_vaquita_q1.txt
+cp ./report//t:use_overlap#g:hg19.fa#o:0.8#m:50#u:q2/report.txt ./WABI/comp_tri_vaquita_q2.txt
+cp ./report//t:use_overlap#g:hg19.fa#o:0.8#m:50#u:q3/report.txt ./WABI/comp_tri_vaquita_q3.txt
+cp ./report//t:use_overlap#g:hg19.fa#o:0.8#m:50#u:q4/report.txt ./WABI/comp_tri_vaquita_q4.txt
+
+
+
+====
+./report.py -t use_overlap -g chr22.fa -o 0.8 -m 50 -u 4 > aa.txt
+vi ./report/t\:mason#f\:chr22_mason.vcf#g\:chr22.fa#o\:0.8#m\:50#s\:qc#u\:4/report.txt
+
+./report.py -t mason -f chr22_mason.vcf -g chr22.fa -o 0.8 -m 50 > aa.txt
+vi ./report/t\:mason#f\:chr22_mason.vcf#g\:chr22.fa#o\:0.8#m\:50/report.txt
+
+./report.py -t mason -f chr22_mason.vcf -g chr22.fa -o 0.8 -m 50 -s qc -u 4 > aa.txt
+vi ./report/t\:mason#f\:chr22_mason.vcf#g\:chr22.fa#o\:0.8#m\:50#s\:qc#u\:4/report.txt
+
+./report.py -t mason -f chr22_mason.vcf -g chr22.fa -o 0.8 -m 50 -s qc -b ce > aa.txt
+vi ./report/t\:mason#f\:chr22_mason.vcf#g\:chr22.fa#o\:0.8#m\:50#s\:qc#b\:ce/report.txt
+
+./report.py -t use_overlap -g hs37d5.fa -o 0.8 -m 50 -u 4 > aa.txt &
+vi./report//t:use_overlap#g:hs37d5.fa#o:0.8#m:50#u:4/report.txt
