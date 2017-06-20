@@ -1,4 +1,4 @@
-This repositorty contains all the scripts that I used for benchmakring [Vaquita](http://www.worldwildlife.org/species/vaquita).
+This repositorty contains all the scripts that I used for benchmakring [Vaquita](https://github.com/seqan/vaquita).
 The result was presented in [WABI2017](http://www.acm-bcb.org/WABI/2017/index.php) in Boston. 
 
 Prerequeistics
