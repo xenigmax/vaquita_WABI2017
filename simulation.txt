@@ -1,0 +1,48 @@
+1. MASON 
+Version : 2.0.5
+Download : http://packages.seqan.de/mason2/mason2-2.0.5-Linux-x86_64.tar.xz
+Command : 
+    
+            # to simulate variations
+            ./bin/mason/bin/mason_variator \
+            -n 2 \
+            -ir ./ref/chr22.fa \
+            -of ./chr22_mason.fa \
+            -ov ./chr22_mason.vcf \
+            --out-breakpoints ./chr22_mason_breakpoints.tsv \
+            --min-sv-size 30 \
+            --max-sv-size 5000 \
+            --sv-indel-rate 0.000004 \
+            --sv-inversion-rate 0.000002 \
+            --sv-duplication-rate 0.000002 \
+            --sv-translocation-rate 0.000002 \
+            --snp-rate 0.0002 \
+            --small-indel-rate 0.00004 \
+            --min-small-indel-size 1 \
+            --max-small-indel-size 29 \
+            2>mason.log.txt
+
+2. ART
+Version : MountRainer-2016.06.05
+Download : http://www.niehs.nih.gov/research/resources/assets/docs/artbinmountrainier20160605linux64tgz.tgz
+Command :
+    ./bin/art_bin_MountRainier/art_illumina -ss HS25 -sam -i ./chr22_mason.fa -p -l 100 -f 30 -m 300 -s 30 -o chr22_mason_30x_ &
+    ./bin/art_bin_MountRainier/art_illumina -ss HS25 -sam -i ./chr22_mason.fa -p -l 100 -f 5 -m 300 -s 30 -o chr22_mason_5x_ &
+
+    # depth (read-length:100, insert:300-30)
+    ./bin/art_bin_MountRainier/art_illumina -ss HS25 -sam -i ./chr22_mason.fa -p -l 100 -f 25 -m 300 -s 30 -o chr22_mason_50x_ &
+    ./bin/art_bin_MountRainier/art_illumina -ss HS25 -sam -i ./chr22_mason.fa -p -l 100 -f 15 -m 300 -s 30 -o chr22_mason_30x_ &
+    ./bin/art_bin_MountRainier/art_illumina -ss HS25 -sam -i ./chr22_mason.fa -p -l 100 -f 2.5 -m 300 -s 30 -o chr22_mason_5x_ &
+    ./bin/art_bin_MountRainier/art_illumina -ss HS25 -sam -i ./chr22_mason.fa -p -l 100 -f 5 -m 300 -s 30 -o chr22_mason_10x_ &
+
+    # insert size (read-length:100, depth:30)
+    # (200-20) (300-30), (600-60), (1000-100)
+    ./bin/art_bin_MountRainier/art_illumina -ss HS25 -sam -i ./chr22_mason.fa -p -l 100 -f 15 -m 200 -s 20 -o chr22_mason_30x_200-20i &
+    ./bin/art_bin_MountRainier/art_illumina -ss HS25 -sam -i ./chr22_mason.fa -p -l 100 -f 15 -m 600 -s 60 -o chr22_mason_30x_600-60i &
+    ./bin/art_bin_MountRainier/art_illumina -ss HS25 -sam -i ./chr22_mason.fa -p -l 100 -f 15 -m 1000 -s 100 -o chr22_mason_30x_1000-100i &
+
+    # read length (insert : 300-30, depth:30)
+    # 50, 75, 150
+    ./bin/art_bin_MountRainier/art_illumina -ss HS25 -sam -i ./chr22_mason.fa -p -l 50 -f 15 -m 300 -s 30 -o chr22_mason_30x_50r &
+    ./bin/art_bin_MountRainier/art_illumina -ss HS25 -sam -i ./chr22_mason.fa -p -l 75 -f 15 -m 300 -s 30 -o chr22_mason_30x_75r &
+    ./bin/art_bin_MountRainier/art_illumina -ss HS25 -sam -i ./chr22_mason.fa -p -l 150 -f 15 -m 300 -s 30 -o chr22_mason_30x_150r &
