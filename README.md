@@ -28,7 +28,7 @@ You can refer my commands for generating simulation datasets in `simulations.txt
 
 | Name  | Link or Accession #         |
 | ------| ------------------- |
-| Genome in a bottle | ftp://ftp-trace.ncbi.nlm.nih.gov/giab/ftp/technical/svclassify_Manuscript/Supplementary_Information/ |
+| Genome in a bottle | ftp://ftp-trace.ncbi.nlm.nih.gov/giab/ftp/technical/svclassify_Manuscript/Supplementary_Information/Personalis_1000_Genomes_deduplicated_deletions.bed |
 | Illumina Platinum Genomes   | ERR194147, ERR194160, and ERR194161 |
 
 
