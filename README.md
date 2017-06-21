@@ -7,6 +7,7 @@ Prerequeistics
 
 | Name         | Reference           |  Version  |
 | -------------| ------------------- | --------- |
+| Vaquita      | [source repository](https://github.com/seqan/vaquita) | WABI2017  |
 | LumpyExpress | Layer et al., 2014  | 0.2.13    |
 | Delly2       | Rausch et al., 2012 | 0.7.3     |
 | CREST        | Wang et al., 2011   | 1.0       |
