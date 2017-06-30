@@ -35,7 +35,7 @@ You can refer my commands for generating simulation datasets in `simulations.txt
 
 Configuration
 -----------------
-Please open `config.py` in this repository, and change settings accordingly.
+Please open `config.py`, and change settings accordingly.
 For example, you may have to change binary files for variant callers in [here](https://github.com/xenigmax/vaquita_WABI2017/blob/master/config.py#L19-L26).
 
 Run & Reporting
